@@ -25,7 +25,7 @@ public abstract class AbstractCommand {
     private final String SPACE = " ";
     private final String EMPTY = "";
 
-    public AbstractCommand(String cmdRaw){
+    protected AbstractCommand(String cmdRaw){
         this.cmdRaw = cmdRaw.replaceAll(" +", SPACE);
         params = new HashMap<>();
         options = new Options();
