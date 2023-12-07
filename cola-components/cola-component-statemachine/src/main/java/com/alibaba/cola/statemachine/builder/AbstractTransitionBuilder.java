@@ -31,7 +31,7 @@ import java.util.Map;
 
     final TransitionType transitionType;
 
-    public AbstractTransitionBuilder(Map<S, State<S, E, C>> stateMap, TransitionType transitionType) {
+    protected AbstractTransitionBuilder(Map<S, State<S, E, C>> stateMap, TransitionType transitionType) {
         this.stateMap = stateMap;
         this.transitionType = transitionType;
     }
